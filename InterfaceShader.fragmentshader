@@ -1,0 +1,17 @@
+#version 330 core
+
+in vec4 fragmentColor;
+//uniform samplerBuffer Buffer;
+// Ouput data
+out vec4 color;
+
+void main()
+{
+	// Output color = red;
+	//color = fragmentColor;
+	// color.r = fragmentColor[0]/255;
+	// color.g = fragmentColor[1]/255;
+	// color.b = fragmentColor[2]/255;
+	// color.a = fragmentColor[3]/255;
+	color = vec4(fragmentColor[0]/255,fragmentColor[1]/255,fragmentColor[2]/255,fragmentColor[3]/255);
+}
